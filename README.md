@@ -7,7 +7,7 @@ This project is an end-to-end initiative to develop "Turjuman," a highly special
 2. **Efficient Model Fine-Tuning**: The compact yet powerful **Qwen-1.5B** model was fine-tuned using the **LoRA** technique for optimal performance without the need for extensive computational resources.
 
 ## Phase 1: Data Pipeline & Knowledge Distillation
-<img src="assets/phase1.png" alt="scraping" width="50%" />  <img src="assets/knowledge_distilation.png" alt="knowledge_distilation" width="50%"/>
+<img src="assets/phase11.png" alt="scraping" width="40%" />   <img src="assets/knowledge_distilation.png" alt="knowledge_distilation" width="40%"/>
 
 The foundation of this project was the creation of a unique, high-quality dataset. Generic datasets often lack the specific context needed for nuanced translation. To solve this, the following steps were taken:
 
@@ -23,6 +23,7 @@ The foundation of this project was the creation of a unique, high-quality datase
 This process, known as Knowledge Distillation, allowed us to transfer the advanced capabilities of a large model into a perfectly structured dataset ideal for supervised fine-tuning.
 
 ## Phase 2: Model Fine-Tuning
+<img src="assets/Training_Arch.png" alt="scraping" width="40%" />
 With a high-quality dataset of over 3,000 structured examples, the next phase focused on training the student model efficiently.
 
 1. **Model Selection**: **Qwen-1.5B-Instruct** was chosen as the base model due to its excellent performance-to-size ratio, making it ideal for specialization.
@@ -35,8 +36,15 @@ With a high-quality dataset of over 3,000 structured examples, the next phase fo
 
 ------------------------
 ### Project Outcome
-The result of this project is "Turjuman," a fine-tuned model that excels at providing detailed, context-aware translations from English to Arabic.
+The result of this project is "Turjuman," a fine-tuned model that excels at providing detailed, context-aware translations from English to Arabic. The model demonstrated strong learning progress during training. Notably, around the halfway mark of the fine-tuning process, it achieved a promising training loss of 0.405 and a validation loss of 0.62, indicating effective generalization on the custom-built dataset. <img src="assets/training.png" alt="scraping" width="40%" /> <img src="assets/evaluation.png" alt="scraping" width="40%" />
+As you can see, the difference between before and after
+### Before
+<img src="assets/before.png" alt="scraping" width="40%" />
 
+### After
+<img src="assets/after.png" alt="scraping" width="40%" />
+
+------------------------
 ### Technology Stack
 - Base Model: Qwen-1.5B
 
