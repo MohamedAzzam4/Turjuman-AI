@@ -7,6 +7,8 @@ This project is an end-to-end initiative to develop "Turjuman," a highly special
 2. **Efficient Model Fine-Tuning**: The compact yet powerful **Qwen-1.5B** model was fine-tuned using the **LoRA** technique for optimal performance without the need for extensive computational resources.
 
 ## Phase 1: Data Pipeline & Knowledge Distillation
+<img src="assets/phase1.png" alt="scraping" width="50%" />  <img src="assets/knowledge_distilation.png" alt="knowledge_distilation" width="50%"/>
+
 The foundation of this project was the creation of a unique, high-quality dataset. Generic datasets often lack the specific context needed for nuanced translation. To solve this, the following steps were taken:
 
 1. **Diverse Topic Sourcing**: A list of varied topics (e.g., science, history, technology, arts) was generated to ensure the model's broad understanding.
